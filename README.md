@@ -4,6 +4,6 @@
 * JS
 
 **Made By MEG Team** <br>
-*Pizza's restaurant page*
+*Online Course's Webpage*
 
-[Website Link](https://megteam.github.io/Pizzas/)
+[Website Link](https://megteam.github.io/Learning/)
