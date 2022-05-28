@@ -1,7 +1,6 @@
 # Languages Used:
 * HTML
 * CSS
-* JS
 
 **Made By MEG Team** <br>
 *Online Course's Webpage*
