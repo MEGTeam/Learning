@@ -1,21 +1,21 @@
 *{
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
 }
 body{
     font-family: 'Cairo', sans-serif;
 }
-.login{
-    height: 95vh;
+.signup{
+    height: 100vh;
     width: 100%;
 }
-.login h4{
+.signup h4{
     font-weight: 500;
     text-align: right;
     font-size: 40px;
     margin-bottom: 15px;
 }
-.login > span{
+.signup > div{
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
@@ -23,7 +23,7 @@ body{
     display: block;
     padding-top: 20vh
 }
-.log{
+.sign{
     display: flex;
     flex-flow: column wrap;
     border: 1px solid hsl(0deg 0% 95%);
@@ -35,14 +35,14 @@ body{
     padding-right: 10px;
     box-shadow: 0px 5px 10px 0px rgb(128 128 128 / 20%);
 }
-.log p{
+.sign p{
     padding-top: 20px;
     font-size: 15px;
     font-weight: 400;
     margin-bottom: 10px;
     color: black;
 }
-.log input[type='text'] 
+.sign input[type='text'] 
 ,input[type='password']{
     width: calc(100% - 20px);
     height: 35px;
@@ -51,26 +51,16 @@ body{
     box-sizing: border-box;
     padding: 20px 10px
 }
-.log input[type='text'] 
+.sign input[type='text'] 
 ,input[type='password']:focus{
     outline: 0.5px solid #cccccc;
 }
-.log span:first-of-type{
+.sign span{
     display: flex;
     flex-flow: row-reverse wrap;
     margin-top: 20px;
-    margin-bottom: 20px;
 }
-.log input[type='checkbox']{
-    width: 15px;
-    margin-left: 5px;
-    margin-top: 3px
-}
-.log span:nth-of-type(2){
-    display: flex;
-    flex-flow: column wrap;
-}
-span:nth-of-type(2) div{
+span div:first-child{
     width: fit-content;
     padding: 10px 15px;
     background-color: #007bff;
@@ -79,42 +69,32 @@ span:nth-of-type(2) div{
     border-radius: 5px;
     margin-bottom: 10px;
 }
-span:nth-of-type(2) div:hover{
+span div:hover{
     cursor: pointer;
     background-color: #007BD5;
 }
-span:nth-of-type(2) a:nth-of-type(2){
-    position: relative;
-    right: 15px; 
-    top: 2px;
-    margin-bottom: 30px;
+.words{
+    margin-top: 10px!important;
+    margin-right: 8px!important;
+    margin-bottom: 10px;
+}
+span a{
+    margin-right: 2px;
     color: #0099ff;
 }
-span:nth-of-type(2) a:link{
+span a:link{
     text-decoration: none;
     color: #0099ff;
 }
 /* Medium display */
 @media (max-width:992px){
-    .log{
+    .sign{
         width: 720px;
-    }
-    span:nth-of-type(2){
-        flex-direction: row-reverse !important;
-    }
-    span:nth-of-type(2) a{
-        top:10px;
-    }
-    span:nth-of-type(2) div{
-        font-size: 15px;
-    }
-    span:nth-of-type(2) a:nth-of-type(2){
-        top: 8px
     }
 }
 /* Small display */
 @media (max-width:768px){
-    .log{
+    .sign{
         width: 90vw;
     }
 }
